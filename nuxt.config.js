@@ -45,7 +45,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.HTTP_ENDPOINT || "http://localhost:1337/graphql",
+        httpEndpoint: process.env.HTTP_ENDPOINT,
         httpLinkOptions: {
           headers: {
             "x-api-key": process.env.APPSYNC_API_KEY,
