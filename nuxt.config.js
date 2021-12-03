@@ -45,7 +45,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.HTTP_ENDPOINT,
+        httpEndpoint: process.env.HTTP_ENDPOINT || "https://o-guia-dev-api.herokuapp.com/graphql",
         httpLinkOptions: {
           headers: {
             "x-api-key": process.env.APPSYNC_API_KEY,
