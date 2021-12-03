@@ -1,6 +1,6 @@
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "http://localhost:1337",
+    API_URL: process.env.API_URL,
   },
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
