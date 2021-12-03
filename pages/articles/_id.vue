@@ -12,6 +12,7 @@
         uk-light
         uk-padding
       "
+      style="max-height: 50vh;"
       :data-src="api_url + article.image.url"
       uk-img
     >

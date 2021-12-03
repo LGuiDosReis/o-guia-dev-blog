@@ -30,7 +30,7 @@
                   <div class="uk-background-cover" style="background-image: url('https://images.unsplash.com/photo-1592561199818-6b69d3d1d6e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=988&q=80 3308w');" uk-height-viewport></div>
                 </span>
                 <div class="uk-padding-large">
-                    <h1 style="font-family: Staatliches;">O guia do dev</h1>
+                    <h1 style="font-family: Staatliches;">O guia dev</h1>
                     <div class="uk-width-1-2@s">
                         <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
                           <li v-for="category in categories" :key="category.id">
