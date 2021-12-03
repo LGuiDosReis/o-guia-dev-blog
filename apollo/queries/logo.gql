@@ -1,0 +1,8 @@
+query Logo {
+  logo {
+    id
+    image {
+      url
+    }
+  }
+}
