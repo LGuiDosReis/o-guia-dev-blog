@@ -1,7 +1,11 @@
 export default {
   env: {
-    strapiBaseUri: process.env.API_URL || "https://o-guia-dev-api.herokuapp.com/graphql",
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337",
   },
+  generate: {
+    fallback: true,
+  },
+
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -45,7 +49,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.HTTP_ENDPOINT || "https://o-guia-dev-api.herokuapp.com/graphql",
+        httpEndpoint: process.env.HTTP_ENDPOINT || "http://localhost:1337/graphql",
         httpLinkOptions: {
           headers: {
             "x-api-key": process.env.APPSYNC_API_KEY,
