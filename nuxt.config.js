@@ -1,6 +1,6 @@
 export default {
   env: {
-    API_URL: process.env.API_URL,
+    strapiBaseUri: process.env.API_URL || "https://o-guia-dev-api.herokuapp.com/graphql",
   },
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
