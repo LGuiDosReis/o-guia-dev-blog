@@ -72,7 +72,7 @@ export default {
       lang: "pt-br",
     },
     icon: {
-      // fileName: "favicon.ico",
+      fileName: "favicon.ico",
     },
   },
 };
