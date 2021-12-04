@@ -9,7 +9,7 @@ export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "O guia dev",
+    title: "O guia do desenvolvedor das galáxias",
     htmlAttrs: {
       lang: "pt-br",
     },
