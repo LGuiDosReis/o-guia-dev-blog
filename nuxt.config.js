@@ -71,8 +71,8 @@ export default {
       short_name: "O guia dev",
       lang: "pt-br",
     },
-    icon: {
-      fileName: "favicon.ico",
-    },
+    // icon: {
+    // fileName: "favicon.ico",
+    // },
   },
 };
