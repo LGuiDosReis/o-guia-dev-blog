@@ -1,16 +1,18 @@
 query Category($id: ID!) {
-  category(id: $id) {
-    name
-    articles {
-      id
-      title
-      content
-      image {
-        url
-      }
-      category {
+  data {
+    category(id: $id) {
+      name
+      articles {
         id
-        name
+        title
+        content
+        image {
+          url
+        }
+        category {
+          id
+          name
+        }
       }
     }
   }

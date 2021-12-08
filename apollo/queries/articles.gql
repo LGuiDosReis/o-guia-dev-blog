@@ -1,13 +1,15 @@
 query Articles {
-  articles {
-    id
-    title
-    content
-    image {
-      url
-    }
-    category {
-      name
+  data {
+    articles {
+      id
+      title
+      content
+      image {
+        url
+      }
+      category {
+        name
+      }
     }
   }
 }
