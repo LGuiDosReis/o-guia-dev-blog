@@ -36,7 +36,7 @@
           >
             <div class="uk-card uk-card-muted">
               <div v-if="article.attributes.image" class="uk-card-media-top">
-                <img :src="api_url + article.image.data.attributes.url" alt="" height="100" />
+                <img :src="api_url + article.attributes.image.data.attributes.url" alt="" height="100" />
               </div>
               <div class="uk-card-body">
                 <p id="category" v-if="article.attributes.category" class="uk-text-uppercase">
