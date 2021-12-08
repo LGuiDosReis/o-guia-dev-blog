@@ -6,6 +6,6 @@ query Articles($id: ID!) {
     image {
       url
     }
-    published_at
+    published
   }
 }
