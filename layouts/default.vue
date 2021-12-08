@@ -14,8 +14,8 @@
 
         <div class="uk-navbar-right uk-visible@s" >
           <ul class="uk-navbar-nav">
-              <li v-for="category in categories" :key="category.id">
-                <router-link :to="{ name: 'categories-id', params: { id: category.id }}" tag="a">{{ category.name }}
+              <li v-for="category in categories.data" :key="category.id">
+                <router-link :to="{ name: 'categories-id', params: { id: category.id }}" tag="a">{{ category.attributes.name }}
                 </router-link>
               </li>
           </ul>
@@ -33,8 +33,8 @@
                     <h1 style="font-family: Staatliches;">O guia dev</h1>
                     <div class="uk-width-1-2@s">
                         <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav>
-                          <li v-for="category in categories" :key="category.id">
-                            <router-link class="uk-modal-close" :to="{ name: 'categories-id', params: { id: category.id }}" tag="a">{{ category.name }}
+                          <li v-for="category in categories.data" :key="category.id">
+                            <router-link class="uk-modal-close" :to="{ name: 'categories-id', params: { id: category.id }}" tag="a">{{ category.attributes.name }}
                             </router-link>
                           </li>
                         </ul>

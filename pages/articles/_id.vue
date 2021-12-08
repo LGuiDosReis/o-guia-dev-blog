@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      v-if="article.image"
+      v-if="article.data.attributes.image"
       id="banner"
       class="
         uk-height-small
@@ -13,16 +13,16 @@
         uk-padding
       "
       style="max-height: 50vh;"
-      :data-src="api_url + article.image.url"
+      :data-src="api_url + article.data.attributes.image.data.attributes.url"
       uk-img
     >
     </div>
 
     <div class="uk-section">
       <div class="uk-container uk-container-small">
-        <div v-if="article.content" id="editor" v-html="$md.render(article.content)"></div>
-        <p v-if="article.published">
-          {{ moment(article.published).format("MMM Do YY") }}
+        <div v-if="article.data.attributes.content" id="editor" v-html="$md.render(article.data.attributes.content)"></div>
+        <p v-if="article.data.attributes.published">
+          {{ moment(article.data.attributes.published).format("MMM Do YY") }}
         </p>
       </div>
     </div>

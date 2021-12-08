@@ -15,9 +15,13 @@
     "@nuxtjs/pwa": "^3.3.5",
     "apollo-cache-inmemory": "^1.6.6",
     "core-js": "^3.15.1",
-    "graphql": "^16.0.1",
+    "graphql": "^16.1.0",
+    "graphql-tag": "^2.12.6",
     "nuxt": "^2.15.7",
-    "uikit": "^3.9.4"
+    "uikit": "^3.9.4",
+    "vue": "^2.6.6",
+    "vue-server-renderer": "^2.6.6",
+    "vue-template-compiler": "^2.6.6"
   },
   "devDependencies": {}
 }

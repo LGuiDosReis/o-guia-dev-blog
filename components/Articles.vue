@@ -9,15 +9,15 @@
           :key="article.id"
         >
           <div class="uk-card uk-card-muted">
-            <div v-if="article.image" class="uk-card-media-top">
-              <img :src="api_url + article.image.url" alt="" height="100" />
+            <div v-if="article.attributes.image" class="uk-card-media-top">
+              <img :src="api_url + article.attributes.image.data.attributes.url" alt="" height="100" />
             </div>
             <div class="uk-card-body">
-              <p id="category" v-if="article.category" class="uk-text-uppercase">
-                {{ article.category.name }}
+              <p id="category" v-if="article.attributes.category" class="uk-text-uppercase">
+                {{ article.attributes.category.data.attributes.name }}
               </p>
               <p id="title" class="uk-text-large">
-                {{ article.title }}
+                {{ article.attributes.title }}
               </p>
             </div>
           </div>
@@ -35,15 +35,15 @@
             :key="article.id"
           >
             <div class="uk-card uk-card-muted">
-              <div v-if="article.image" class="uk-card-media-top">
-                <img :src="api_url + article.image.url" alt="" height="100" />
+              <div v-if="article.attributes.image" class="uk-card-media-top">
+                <img :src="api_url + article.image.data.attributes.url" alt="" height="100" />
               </div>
               <div class="uk-card-body">
-                <p id="category" v-if="article.category" class="uk-text-uppercase">
-                  {{ article.category.name }}
+                <p id="category" v-if="article.attributes.category" class="uk-text-uppercase">
+                  {{ article.attributes.category.data.attributes.name }}
                 </p>
                 <p id="title" class="uk-text-large">
-                  {{ article.title }}
+                  {{ article.attributes.title }}
                 </p>
               </div>
             </div>

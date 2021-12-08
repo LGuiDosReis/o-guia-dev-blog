@@ -1,8 +1,10 @@
 query Categories {
-  data {
-    categories {
+  categories {
+    data {
       id
-      name
+      attributes {
+        name
+      }
     }
   }
 }

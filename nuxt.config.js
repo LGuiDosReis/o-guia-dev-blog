@@ -50,11 +50,6 @@ export default {
     clientConfigs: {
       default: {
         httpEndpoint: process.env.GRAPHQL_URL || "http://localhost:1337/graphql",
-        httpLinkOptions: {
-          headers: {
-            "x-api-key": process.env.APPSYNC_API_KEY,
-          },
-        },
       },
     },
   },

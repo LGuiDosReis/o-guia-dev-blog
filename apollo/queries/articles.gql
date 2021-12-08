@@ -1,14 +1,24 @@
 query Articles {
-  data {
-    articles {
+  articles {
+    data {
       id
-      title
-      content
-      image {
-        url
-      }
-      category {
-        name
+      attributes {
+        title
+        content
+        image {
+          data {
+            attributes {
+              url
+            }
+          }
+        }
+        category {
+          data {
+            attributes {
+              name
+            }
+          }
+        }
       }
     }
   }
