@@ -4,7 +4,7 @@
       <div class="uk-container uk-container-large">
         <h1>O guia dev</h1>
 
-        <Articles :articles="articles.data"></Articles>
+        <Articles v-if='articles.data' :articles="articles.data"></Articles>
 
       </div>
     </div>
